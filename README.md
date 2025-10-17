@@ -1,50 +1,41 @@
-# AI-Enabled E-Commerce (MERN) — Complete Project
+# 🛍️ AI-Enabled E-Commerce (MERN)
 
-## Quick start (local)
+![GitHub repo size](https://img.shields.io/github/repo-size/Ishwarij032005/AI-Ecommerce_web)
+![GitHub stars](https://img.shields.io/github/stars/Ishwarij032005/AI-Ecommerce_web?style=social)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Made with](https://img.shields.io/badge/Made%20with-MERN-blue)
 
-1. Backend
+🚀 A full-stack **AI-powered e-commerce website** that recommends products intelligently, provides chatbot assistance, and supports secure payments & order tracking.
+
+---
+
+## 🧠 Tech Stack
+**Frontend:** React, TailwindCSS  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB  
+**AI Integration:** OpenAI API  
+**Deployment:** Docker, Vercel (Frontend), Render (Backend)
+
+---
+
+## ⚡ Features
+- 🤖 AI chatbot & product recommendations  
+- 🛒 Smart cart & checkout  
+- 👩‍💻 Admin dashboard  
+- 🔐 JWT-based authentication  
+- 💬 Real-time order updates
+
+---
+
+## 📦 Setup Instructions
+```bash
+# Backend
 cd backend
 npm install
 cp .env.example .env
-
-edit .env: set MONGODB_URI (or leave default local), JWT_SECRET, ADMIN_TOKEN, OPENAI_API_KEY
-npm run seed
 npm run start
 
-nginx
-Copy code
-Backend will run on http://localhost:5000
-
-2. Frontend
+# Frontend
 cd frontend
 npm install
-
-optional: set VITE_API_URL in .env, default is http://localhost:5000/api
 npm run dev
-
-cpp
-Copy code
-Frontend runs at http://localhost:3000
-
-3. Docker (optional)
-docker-compose up --build
-
-sql
-Copy code
-
-## Default seed credentials
-- Admin: admin@demo.com / adminpass
-- Users: alice@demo.com / userpass, bob@demo.com / userpass
-
-## Notes
-- Put your OpenAI API key in backend/.env as OPENAI_API_KEY=sk-...
-- Admin routes accept either:
-- x-admin-token header (matches ADMIN_TOKEN), or
-- an authenticated user with isAdmin=true (JWT)
-
-## Features
-- JWT Authentication
-- OpenAI chatbot
-- Collaborative filtering recommendations using order history
-- File uploads using Multer
-- Admin Dashboard (create/edit/delete products)
